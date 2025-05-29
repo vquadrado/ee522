@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1748542266.55301 "/Users/vinicius/projects/latex/ee522/lab5/main.tex" "main.pdf" "main" 1748542268.26683 0
-  "/Users/vinicius/projects/latex/ee522/lab5/main.tex" 1748542266.29935 14250 d5a1c09d631f89c208dfcca979684aa7 ""
+["pdflatex"] 1748542558.41466 "/Users/vinicius/projects/latex/ee522/lab5/main.tex" "main.pdf" "main" 1748542560.11716 0
+  "/Users/vinicius/projects/latex/ee522/lab5/main.tex" 1748542558.22245 14255 343b3c0b3c6fef4c14be5b85bf95198b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -216,9 +216,9 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1748536640 3345733 fa22ecd6bc77a11850b779a25c21e3a3 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "img/pcb-esquema.png" 1748541866.50779 691174 7390b439a0c8082ea8a7132e103c9006 ""
-  "main.aux" 1748542268.16235 5991 a7c311e8c1e049c4e254777c3f8edf76 "pdflatex"
-  "main.out" 1748542268.16354 4699 38cbd85b7485381c7eb317b2fbe583cc "pdflatex"
-  "main.tex" 1748542266.29935 14250 d5a1c09d631f89c208dfcca979684aa7 ""
+  "main.aux" 1748542560.01554 5991 a7c311e8c1e049c4e254777c3f8edf76 "pdflatex"
+  "main.out" 1748542560.01674 4699 38cbd85b7485381c7eb317b2fbe583cc "pdflatex"
+  "main.tex" 1748542558.22245 14255 343b3c0b3c6fef4c14be5b85bf95198b ""
   (generated)
   "main.aux"
   "main.log"
