@@ -352,6 +352,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT ./img/pcb-esquema.png
+INPUT ./img/pcb-esquema.png
+INPUT ./img/pcb-esquema.png
+INPUT ./img/pcb-esquema.png
+INPUT ./img/pcb-esquema.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
 INPUT main.aux
 INPUT ./main.out
