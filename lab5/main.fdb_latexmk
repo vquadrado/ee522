@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1748607581.90993 "/Users/vinicius/projects/latex/ee522/lab5/main.tex" "main.pdf" "main" 1748607583.8455 0
-  "/Users/vinicius/projects/latex/ee522/lab5/main.tex" 1748607579.65742 21301 377a4dd1394694c8b3d45bb2c810574c ""
+["pdflatex"] 1748629626.1148 "/Users/vinicius/projects/latex/ee522/lab5/main.tex" "main.pdf" "main" 1748629628.09789 0
+  "/Users/vinicius/projects/latex/ee522/lab5/main.tex" 1748629625.8642 21320 7708df196d9feae92c25787960279b1b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -36,6 +36,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1215737283 139826 9213617a7cb78635fc326b859c0b2273 ""
@@ -224,9 +225,9 @@
   "img/com-resistencia.png" 1748606020.38087 1086788 4ec3caaaa3a835ecaacc784b3dc23a9a ""
   "img/pcb-esquema.png" 1748541866.50779 691174 7390b439a0c8082ea8a7132e103c9006 ""
   "img/sem-resistencia.png" 1748605948.21647 904486 0a3255a9855690f679cea985acb96fe4 ""
-  "main.aux" 1748607583.74151 7136 a542a52fd4ee499e5e0354d60d92eba5 "pdflatex"
-  "main.out" 1748607583.74277 4197 b063532227415ea142047377be672d94 "pdflatex"
-  "main.tex" 1748607579.65742 21301 377a4dd1394694c8b3d45bb2c810574c ""
+  "main.aux" 1748629627.98804 7136 a542a52fd4ee499e5e0354d60d92eba5 "pdflatex"
+  "main.out" 1748629627.98926 4197 b063532227415ea142047377be672d94 "pdflatex"
+  "main.tex" 1748629625.8642 21320 7708df196d9feae92c25787960279b1b ""
   (generated)
   "main.aux"
   "main.log"
