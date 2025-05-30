@@ -64,7 +64,8 @@ utilizados e procedimento de execução do Crosstalk em Placa de
 Circuito Impresso.
 
 \subsubsection{Montagem}
-Utilizou-se a placa com esquemático mostrado na figura \ref{fig:img/pcb-esquema.png}, com quatro
+Utilizou-se a placa com esquemático mostrado na figura
+\ref{fig:img/pcb-esquema.png}, com quatro
 trilhas, uma de alimentação (A), P1, P2 e P$\perp$.
 As trilhas com orientação paralela em relação a trilha A são as
 trilhas P1 e P2, com distância entre A de 1 e 2 milímetros,
@@ -103,14 +104,123 @@ utilizados e procedimento de execução do experimento de Casamento de
 Impedâncias e Reflexões de Sinais em Linhas de Transmissão.
 
 \subsubsection{Montagem}
-[placeholder]
+O aparato experimental desta seção do estudo consiste em um cabo BNC conectando
+diretamente um gerador de sinais a um osciloscópio, conforme diagrama
+esquemático da figura \ref{fig:img/circuito2.png}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/circuito2.png}
+  \caption{Esquemático do experimento de Casamento de Impedâncias}
+  \label{fig:img/circuito2.png}
+\end{figure}
 
 \subsubsection{Equipamentos utilizados}
-[placeholder]
+Nesta parte do experimento, foram utilizados um cabo BNC curto, um
+osciloscópio e um gerador de sinais configurado para produzir sinais
+de onda senoidal e onda quadrada de 10 Vpp.
 
 \subsubsection{Execucao}
-[placeholder]
+O objetivo desta seção é analisar a amplitude do sinal lido pelo
+osciloscópio nesta configuração apresentada e qual o efeito de se
+conectar uma resistência de 50 ohm em paralelo a entrada a do
+osciloscópio. Com base em conhecimento prévio de circuitos elétricos,
+espera-se que a baixa resistência conectada na entrada do
+osciloscópio diminui a impedância de entrada do mesmo, para valores
+próximos de 50 ohm, pela própria regra de associação de resistores.
+Uma menor impedância de entrada no osciloscópio acarreta em menos
+sinal recebido pelo mesmo, isto é, uma parte do sinal é dispersada em
+outra parte do circuito.
 
+Na sequência, utilizou-se um conector T a saída do gerador de sinais
+para fornecer um sinal de onda quadrada de 10 Vpp e frequência 100
+kHz, valores definidos arbitrariamente durante o experimento. O
+diagrama da figura \ref{fig:img/circuito3.png} elucida o modo de
+conexão do circuito, onde o Canal 1
+do osciloscópio é conectado diretamente na saída do gerador e o Canal
+2 é conectada na carga:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/circuito3.png}
+  \caption{Esquemático do experimento de Casamento de Impedâncias com
+  conector T}
+  \label{fig:img/circuito3.png}
+\end{figure}
+
+A carga, neste caso, é um cano BNC de 100 m, que liga o conector P1
+da placa ao Canal 2 do osciloscópio, que está conectado por indução a
+trilha do conector A da placa que é alimentada pela fonte.
+
+Aqui, deseja-se observar e comparar as formas de onda obtidas em cada
+canal, a fim de estudar o fenômeno de reflexão de sinais em
+circuitos. Ainda sem as medições, podemos inferir que o circuito
+montado é equivalente ao circuito esquematizado na figura
+\ref{fig:img/circuito4.png}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/circuito4.png}
+  \caption{Circuito equivalente ao experimento de Casamento de Impedâncias}
+  \label{fig:img/circuito4.png}
+\end{figure}
+
+Isto é, apesar de não haver conexão galvânica entre o gerador e o
+osciloscópio, o sinal é transmitido como se houvesse uma, devido a
+indução do sinal aplicado na trilha A na trilha P1. É possível
+calcular a relação  entre o sinal de saída e o sinal de entrada:
+
+\begin{equation}
+  \eta = \frac{V_{out}}{V_{in}} = \frac{Z_L}{Z_L + Z_G}
+\end{equation}
+
+Aqui temos que a impedância de entrada do osciloscópio é de
+aproximadamente $Z_L=1 M\Omega $, e a resistência a ser conectada em paralelo a
+entrada do osciloscópio  é de $50\Omega$. Assim, podemos essa relação nos
+casos sem e com a resistência  $Z_G$ conectada:
+
+- Sem resistência conectada:
+\begin{equation}
+  Z_L = Z_L
+\end{equation}
+\begin{equation}
+  \eta = \frac{V_{out}}{V_{in}} = \frac{Z_L}{Z_L + Z_G} =
+  \frac{10^6}{10^6 + 50} \approx 1
+\end{equation}
+
+- Com resistência conectada:
+\begin{equation}
+  Z_L = \frac{Z_L \cdot 50}{Z_L + 50} = \frac{10^6 \cdot 50}{10^6 +
+  50} \approx 50
+\end{equation}
+\begin{equation}
+  \eta = \frac{V_{out}}{V_{in}} = \frac{Z_L}{Z_L + Z_G} =
+  \frac{50}{50 + 50} = \frac{1}{2}
+\end{equation}
+
+Nota-se então que o efeito da conexão da resistência de 50 $\Omega$ em
+paralelo ao osciloscópio é uma redução em 50\% do sinal de entrada.
+Avaliando isso na prática, obtêm-se as medições conforme as das
+figuras \ref{fig:img/sem-resistencia.png} e \ref{fig:img/com-resistencia.png}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/sem-resistencia.png}
+  \caption{Sinal de entrada sem resistência de $50\Omega$ conectada}
+  \label{fig:img/sem-resistencia.png}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/com-resistencia.png}
+  \caption{Sinal de entrada com resistência de $50\Omega$ conectada}
+  \label{fig:img/com-resistencia.png}
+\end{figure}
+
+Além da redução da amplitude do sinal, ao conectar uma resistência de
+$50\Omega$ paralela ao osciloscópio, o que se está fazendo é casando a
+impedância da carga com a da fonte, de forma a eliminar a reflexão do
+sinal, tanto é que não se observam mais as oscilações após o primeiro
+pico, o que significa um sinal mais fidedigno à aquele produzido na fonte.
 \section{Resultados}
 Nas seções abaixo seguem as discussões dos resultados de cada seção
 do experimento.
@@ -318,30 +428,66 @@ região de degrau da onda, onde temos uma maior derivada temporal da
 corrente em A, consequentemente uma maior derivada do campo magnético
 e um maior fluxo de campo magnético.
 
-\subsubsection{Conclusão parcial}
-
-Conclui-se que a proximidade de trilhas em uma placa de circuito
-impresso geram tensão induzida nas trilhas vizinhas, e que a tensão
-induzida é proporcional a frequência de operação e inversamente
-proporcional à distância, logo devemos projetar placas de circuito
-impresso que levem em consideração estes fatores.
-
 \subsection{Seção II - Casamento de Impedâncias / Reflexão de Sinais
 em Linhas de Transmissão}
 Nestas seções apresentaremos os dados, os equipamentos utilizados e o
 método de execução desta seção
 
-\subsubsection{Apresentação de dados}
-[placeholder]
-
 \subsubsection{Análise qualitativa}
-[placeholder]
 
-\subsubsection{Conclusão parcial}
-[placeholder]
+A reflexão de sinais em linhas de transmissão ocorre quando um sinal
+elétrico, ao se propagar por um cabo ou trilha, encontra uma
+descontinuidade de impedância (como por exemplo a diferença entre a
+impedância da linha e a impedância da carga). Parte da energia do
+sinal é refletida então de volta à fonte, interferindo no sinal
+original. Esse fenômeno é particularmente crítico em circuitos de
+linhas de transmissão longas, circuitos que operam em altas
+frequências ou até mesmo que operam com sinais de onda quadrada, o
+que quer dizer lidar com variações abruptas de sinal, circuitos onde
+tais reflexões causam distorções como oscilações e sobressinal
+(overshooting), comprometendo a integridade do sinal.
+
+No experimento realizado, essas teorias foram validadas ao utilizar
+um cabo BNC de 100 m conectado a uma placa de circuito impresso com
+acoplamento indutivo entre as trilhas A (transmissora) e P1
+(receptora). Quando o sinal de onda quadrada (10 Vpp, 100 kHz) foi transmitido:
+
+\begin{itemize}
+  \item Sem casamento de impedância (carga = $1M\Omega$ do osciloscópio):
+
+    Observou-se reflexão significativa, evidenciada pelo ringing no Canal
+    2. A amplitude medida (-48 mV) foi reduzida e instável, pois a alta
+    impedância da carga refletiu quase toda a energia, impedindo sua
+    dissipação eficiente.
+
+  \item Com casamento de impedância (resistor de $50\Omega$ em
+    paralelo com a carga):
+
+    As reflexões foram eliminadas, resultando em um sinal estável no
+    Canal 2. A amplitude reduziu para -32 mV, não por reflexão, mas
+    pelo efeito de divisor de tensão entre a impedância do gerador
+    ($50\Omega$) e a carga casada ($50\Omega$).
+\end{itemize}
+
+Este comportamento confirma que o casamento de impedâncias em
+circuitos elétricos é essencial para garantir a integridade do sinal
+transmitido, embora o preço a se pagar por isso é sacrificar parte da
+amplitude do sinal.
 
 \section{Conclusão}
-[placeholder]
+Conclui-se, para o experimento de crosstalk, que a proximidade de
+trilhas em uma placa de circuito
+impresso geram tensão induzida nas trilhas vizinhas, e que a tensão
+induzida é proporcional a frequência de operação e inversamente
+proporcional à distância, logo devemos projetar placas de circuito
+impresso que levem em consideração estes fatores.
+
+Para o experimento de casamento de impedâncias, conclui-se que a ausência de
+casamento entre impedâncias resulta em reflexões dos sinais, causando perdas 
+de potência e integridade do sinal. Para transmissão de potência o casamento é 
+importante, porém para situações onde desejamos medir o sinal, devemos ter
+no instrumento de medição uma impedância muito maior que a do circuito, evitando
+que o instrumento interfira no circuito, modificando o sinal.
 
 \section{Bibliografia}
 WIKIPÉDIA. Lei de Faraday-Neumann-Lenz. Disponível em:
@@ -358,8 +504,6 @@ Acesso em: 29/05/2025.
 \addcontentsline{toc}{section}{Anexo A - Tabelas de dados do
 experimento de Crosstalk}
 
-
-
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c}
@@ -367,14 +511,14 @@ experimento de Crosstalk}
     \textbf{Frequência (kHz)} & \textbf{$V_{in}$ (mV)} &
     \textbf{$V_{in}$ (mV)} & \textbf{${V_{out}}/{V_{in}}$} \\
     \midrule
-    50	&11	&1.3	&0.11818 \\
-    200	&11	&3.2	&0.29091 \\
-    400	&11	&10.2	&0.92727 \\
-    1000	&11	&12.6	&1.14545 \\
-    2000	&11	&20.4	&1.85455 \\
-    4000	&11	&38	&3.45455 \\
-    8000	&11	&68	&6.18182 \\
-    10000	&11	&84.8	&7.70909 \\
+    50  &11  &1.3  &0.11818 \\
+    200  &11  &3.2  &0.29091 \\
+    400  &11  &10.2  &0.92727 \\
+    1000  &11  &12.6  &1.14545 \\
+    2000  &11  &20.4  &1.85455 \\
+    4000  &11  &38  &3.45455 \\
+    8000  &11  &68  &6.18182 \\
+    10000  &11  &84.8  &7.70909 \\
     \bottomrule
   \end{tabular}
   \caption{Ganho de tensão induzida em P1 por A}
@@ -388,14 +532,14 @@ experimento de Crosstalk}
     \textbf{Frequência (kHz)} & \textbf{$V_{in}$ (mV)} &
     \textbf{$V_{in}$ (mV)} & \textbf{${V_{out}}/{V_{in}}$} \\
     \midrule
-    50	&11	&0.8	&0.07273 \\
-    200	&11	&1.12	&0.10182 \\
-    400	&11	&2.24	&0.20364 \\
-    1000	&11	&4.32	&0.39273 \\
-    2000	&11	&7.84	&0.71273 \\
-    4000	&11	&18	&1.63636 \\
-    8000	&11	&31.6	&2.87273 \\
-    10000	&11	&39.2	&3.56364 \\
+    50  &11  &0.8  &0.07273 \\
+    200  &11  &1.12  &0.10182 \\
+    400  &11  &2.24  &0.20364 \\
+    1000  &11  &4.32  &0.39273 \\
+    2000  &11  &7.84  &0.71273 \\
+    4000  &11  &18  &1.63636 \\
+    8000  &11  &31.6  &2.87273 \\
+    10000  &11  &39.2  &3.56364 \\
     \bottomrule
   \end{tabular}
   \caption{Ganho de tensão induzida em P2 por A}
