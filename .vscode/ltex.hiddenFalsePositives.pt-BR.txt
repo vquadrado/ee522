@@ -1,0 +1,1 @@
+{"rule":"GENERAL_NUMBER_FORMAT","sentence":"^\\QVitor Bergamaschi Dos Santos - 248212 Vinicius De Lima Quadrado - 225357 Leonardo Souza Boaventura - 250417\\E$"}
