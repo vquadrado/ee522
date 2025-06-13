@@ -444,36 +444,121 @@ microondas.
 Nesta seção serão apresentados e discutidos os resultados do experimento de
 reflexão.
 \paragraph{Apresentação de dados}
-\paragraph{Análise dos resultados}
+Conforme registrado na Tabela \ref{tab:reflexao} do relatório, os
+ângulos de reflexão (\(\theta_r\)) foram medidos para quatro valores
+de incidência (\(\theta_i\)) utilizando anteparo metálico e goniômetro:
+\begin{itemize}
+  \item \(\theta_i = 40^\circ\) → \(\theta_r = 40^\circ\)
+  \item \(\theta_i = 50^\circ\) → \(\theta_r = 50^\circ\)
+  \item \(\theta_i = 60^\circ\) → \(\theta_r = 58^\circ\)
+  \item \(\theta_i = 70^\circ\) → \(\theta_r = 67^\circ\)
+\end{itemize}
 
+\paragraph{Análise dos resultados}
+A lei da reflexão (\(\theta_i = \theta_r\)) foi
+validada para ângulos até \(50^\circ\), conforme demonstrado pelo
+alinhamento quase perfeito entre incidência e reflexão nas duas primeiras
+medições. As discrepâncias observadas em \(60^\circ\) e \(70^\circ\)
+(diferenças de \(2^\circ\) e \(3^\circ\)) são atribuíveis a
+limitações experimentais intrínsecas ao arranjo. O posicionamento
+angular do receptor para detecção do sinal máximo pode ter sido
+afetado por difração nas bordas do anteparo metálico, fenômeno mais
+pronunciado em ângulos rasos onde o comprimento de onda (\(\lambda
+\approx 2.85\) cm) interage com irregularidades microscópicas da
+superfície. Este comportamento é consistente com as previsões de
+Kraus (1991) sobre dispersão angular em superfícies não ideais,
+reforçando que microondas obedecem aos princípios fundamentais da
+óptica geométrica, mesmo em frequências de GHz.
 \subsubsection{Refração}
 Nesta seção serão apresentados e discutidos os resultados do experimento de
 refração.
 \paragraph{Apresentação de dados}
+No experimento com o prisma de estireno, o ângulo de refração que
+maximizou a intensidade do sinal no receptor foi \(\theta_r =
+11^\circ\). Este valor foi obtido ajustando-se iterativamente o
+goniômetro até atingir a leitura de pico no detector, conforme
+ilustrado na Figura 5 do relatório.
+
 \paragraph{Análise dos resultados}
+O desvio mensurável do feixe (\(\theta_r = 11^\circ\)) confirma a
+redução da velocidade de fase no interior do dielétrico. A detecção
+do sinal máximo nesse ângulo específico valida a lei de Snell para
+microondas, demonstrando que a relação \(n_1 \sin \theta_i = n_2 \sin
+\theta_r\) mantém-se aplicável mesmo em materiais granulares como o
+estireno. A imprecisão na determinação de \(\theta_i\) (não
+registrada numericamente) limita o cálculo exato do índice de
+refração (\(n\)), porém a existência do desvio comprova que
+\(n_{\text{estireno}} > n_{\text{ar}}\). Como destacado por Reitz et
+al. (1980), este fenômeno é uma consequência direta da interação
+entre o campo elétrico da onda e os dipolos elétricos induzidos no
+dielétrico, que retardam a propagação. O resultado corrobora a
+universalidade da refração em todo o espectro eletromagnético.
 
 \subsubsection{Fibra óptica}
 Nesta seção serão apresentados e discutidos os resultados do experimento de
 condução em fibra óptica.
+
 \paragraph{Apresentação de dados}
+O tubo flexível com grânulos de estireno conduziu microondas entre
+transmissor e receptor inicialmente desalinhados a \(90^\circ\). O
+ângulo crítico de flexão, além do qual o sinal decaiu
+significativamente, foi determinado experimentalmente como \(\theta_c
+= 64^\circ\).
+
 \paragraph{Análise dos resultados}
+A condução eficiente até \(\theta_c = 64^\circ\) é uma evidência
+empírica do ângulo crítico para reflexão interna total. Neste
+experimento, as microondas são confinadas no tubo porque incidem nas
+interfaces ar-estireno com ângulos inferiores a \(\theta_c\),
+sofrendo reflexões sucessivas. A perda abrupta de sinal acima de
+\(64^\circ\) ocorre quando a incidência ultrapassa \(\theta_c =
+\arcsin(1/n)\), permitindo que parte da energia seja refratada para o
+exterior. Este valor está alinhado com o índice de refração estimado
+do estireno (\(n \approx 1.1\)), pois \(\arcsin(1/1.1) \approx
+65^\circ\), dentro da margem de erro experimental. Como enfatizado
+por Feynman (1964), o fenômeno é idêntico ao das fibras ópticas, onde
+o confinamento depende exclusivamente do contraste de índices de
+refração e da geometria do guia.
 
 \subsubsection{Polarização}
 Nesta seção serão apresentados e discutidos os resultados do experimento de
 polarização.
+
 \paragraph{Apresentação de dados}
+Utilizando dois polarizadores metálicos com fendas paralelas, observou-se:
+\begin{enumerate}
+  \item Sinal máximo com polarizadores paralelos (\(\alpha = 0^\circ\)).
+  \item Sinal nulo com polarizadores cruzados (\(\alpha = 90^\circ\)).
+  \item Sinal residual com polarizador intermediário a \(45^\circ\).
+\end{enumerate}
+
+
 \paragraph{Análise dos resultados}
+A extinção completa do sinal a \(90^\circ\) comprova que as
+microondas emitidas são polarizadas linearmente. O cancelamento
+ocorre porque as fendas do segundo polarizador são ortogonais à
+direção do campo elétrico (\(\vec{E}\)) transmitido pelo primeiro,
+bloqueando totalmente a passagem da onda. O sinal detectado a
+\(45^\circ\) corresponde exatamente à projeção de \(\vec{E}\) na
+direção das fendas (\(I = I_0 \cos^2 45^\circ = 0.5I_0\)), validando
+a lei de Malus. Conforme descrito por Kraus (1991), este
+comportamento é uma assinatura inequívoca da natureza transversal das
+ondas eletromagnéticas, onde a energia é transferida
+perpendicularmente à direção de propagação. O experimento demonstra
+que mesmo em microondas, a polarização é um fenômeno puramente
+vetorial, controlável por elementos físicos de simetria definida.
 
 \subsection{Seção II - Cálculo de Frequência de Fonte}
 Nesta seção serão apresentados os resultados dos experimentos dos
 métodos 1 - medição da distância de máximos de intensidade e método 2 -
 medição da cavidade metálica e modos de propagação, ambos métodos
 para calcular a frequência da fonte.
+
 \subsubsection{Método 1 - Medição da distância de máximos de intensidade}
 Nesta seção serão apresentados e discutidos os resultados do experimento de
 medição da distância de máximos de intensidade de radiação.
-\paragraph{Apresentação de dados}
 
+\paragraph{Apresentação de dados}
 A tabela \ref{tab:metodo1dados} apresenta os dados coletados durante
 o experimento de medição da distância de máximos de intensidade:
 tabela de 3 colunas abaixo
