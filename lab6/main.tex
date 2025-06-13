@@ -437,34 +437,202 @@ Nos capítulos abaixo seguem as discussões dos resultados de cada
 seção do experimento.
 
 \subsection{Seção I - Demonstração de Propriedades (de Ondas Eletromagnéticas)}
+Nesta seção serão apresentados os resultados dos experimentos de
+reflexão, refração, condução em fibra óptica e polarização de
+microondas.
 \subsubsection{Reflexão}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+reflexão.
 \paragraph{Apresentação de dados}
 \paragraph{Análise dos resultados}
 
 \subsubsection{Refração}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+refração.
 \paragraph{Apresentação de dados}
 \paragraph{Análise dos resultados}
 
 \subsubsection{Fibra óptica}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+condução em fibra óptica.
 \paragraph{Apresentação de dados}
 \paragraph{Análise dos resultados}
 
 \subsubsection{Polarização}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+polarização.
 \paragraph{Apresentação de dados}
 \paragraph{Análise dos resultados}
 
 \subsection{Seção II - Cálculo de Frequência de Fonte}
+Nesta seção serão apresentados os resultados dos experimentos dos
+métodos 1 - medição da distância de máximos de intensidade e método 2 -
+medição da cavidade metálica e modos de propagação, ambos métodos
+para calcular a frequência da fonte.
 \subsubsection{Método 1 - Medição da distância de máximos de intensidade}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+medição da distância de máximos de intensidade de radiação.
 \paragraph{Apresentação de dados}
+
+A tabela \ref{tab:metodo1dados} apresenta os dados coletados durante
+o experimento de medição da distância de máximos de intensidade:
+tabela de 3 colunas abaixo
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \# o máximo & Posição (cm) & $\Delta dx$ (cm) \\
+    \hline
+    1 & 51 & 0 \\
+    2 & 50 & 1 \\
+    3 & 48.5 & 1.5 \\
+    4 & 46.8 & 1.7 \\
+    5 & 45.2 & 1.6 \\
+    6 & 43.9 & 1.3 \\
+    \hline
+  \end{tabular}
+  \caption{Dados coletados durante o experimento de medição da
+  distância de máximos de intensidade.}
+  \label{tab:metodo1dados}
+\end{table}
+
 \paragraph{Análise dos resultados}
+Sabendo que dois máximos consecutivos representam duas cristas de onda que estão
+a metade do comprimento de onda de distância uma da outra, podemos
+calcular o comprimento de onda $\lambda$ a partir da distância entre
+os máximos consecutivos, que é dada por $\Delta dx$ na tabela
+\ref{tab:metodo1dados}. A média dos valores de $\Delta dx$ é
+\begin{equation}
+  \Delta dx = \frac{1 + 1.5 + 1.7 + 1.6 + 1.3}{5} = 1.42 \text{cm}
+\end{equation}
+Assim, a frequência da fonte pode ser calculada a partir da
+velocidade da luz $c$ e do comprimento de onda $\lambda$:
+\begin{equation}
+  f = \frac{c}{2(\frac{\lambda}{2})} = \frac{3 \times 10^8 }{2 \times
+  1.42 \times 10^{-2}} = 10.4896 \text{GHz}
+\end{equation}
+
+O valor encontrado para a frequência da fonte é de 10.4896 GHz, que
+está próximo do valor especificado de 10.525 GHz, com uma diferença
+de aproximadamente
+0.33 \%.
 
 \subsubsection{Método 2 - Medição da cavidade metálica e modos de propagação}
+Nesta seção serão apresentados e discutidos os resultados do experimento de
+medição da cavidade metálica e modos de propagação.
 \paragraph{Apresentação de dados}
+Os dados coletados durante o experimento de medição da cavidade
+metálica são as dimensões da cavidade, que foram medidas com um
+paquímetro e são apresentadas na tabela \ref{tab:metodo2dados} abaixo:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    Dimensão & Valor (mm) \\
+    \hline
+    Profundidade (P) & 14.18 \\
+    Comprimento (C) & 29.92 \\
+    Largura (L) & 16.61 \\
+    \hline
+  \end{tabular}
+  \caption{Dados coletados durante o experimento de medição da
+  cavidade metálica.}
+  \label{tab:metodo2dados}
+\end{table}
 \paragraph{Análise dos resultados}
+Com as dimensões da cavidade metálica, podemos calcular a
+frequência da fonte utilizando a fórmula para o modo dominante de
+propagação em uma cavidade retangular, que é dada por:
+\begin{equation}
+  f_{nmp} = \frac{c}{2\sqrt{\left(\frac{m}{L}\right)^2 +
+  \left(\frac{n}{C}\right)^2 + \left(\frac{p}{P}\right)^2}}
+\end{equation}
+
+onde $m$, $n$ e $p$ são os modos de propagação, que para o modo
+dominante são $m = 1$, $n = 0$ e $p = 1$. Substituindo os valores
+medidos na tabela \ref{tab:metodo2dados} e considerando a velocidade
+da luz $c = 3 \times 10^8$ m/s, temos:
+\begin{equation}
+  f_{nmp} = \frac{3 \times 10^8}{2\sqrt{\left(\frac{1}{16.61\times
+      10^{-3}}\right)^2 + \left(\frac{0}{29.92 \times 10^{-3}}\right)^2 +
+  \left(\frac{1}{14.18 \times 10^{-3}}\right)^2}} = 10.3 \text{GHz}
+\end{equation}
+O valor encontrado para a frequência da fonte é de 10.3 GHz, que
+está próximo do valor especificado de 10.525 GHz, com uma diferença
+de aproximadamente
+2.14 \%.
 
 \subsection{Seção III - Caracterização da antena}
+Nesta seção serão apresentados os resultados do experimento de
+caracterização da antena, onde foram realizadas varreduras no plano E e plano H.
 \subsubsection{Apresentação de dados}
+A tabela \ref{tab:caracterizacaoantenaplanoh} apresenta os dados coletados
+durante o experimento de caracterização da antena no plano H, enquanto a tabela
+\ref{tab:caracterizacaoantenaplanoe} apresenta os dados coletados
+durante o experimento de caracterização da antena no plano E,
+onde foram registradas as leituras do receptor em função do ângulo de
+rotação do goniômetro:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Ângulo (graus) & Receptor (mA) & Ângulo (graus) & Receptor (mA)\\
+    \hline
+    0 & 1.0 & 5 & 0.99 \\
+    10 & 0.9 & 15 & 0.8 \\
+    20 & 0.65 & 25 & 0.5 \\
+    30 & 0.3 & 35 & 0.15 \\
+    40 & 0.1 & 45 & 0 \\
+    \hline
+  \end{tabular}
+  \caption{Dados coletados durante o experimento de caracterização da
+  antena no plano H.}
+  \label{tab:caracterizacaoantenaplanoh}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Ângulo (graus) & Receptor (mA) & Ângulo (graus) & Receptor (mA)\\
+    \hline
+    0 & 1.0 & 5 & 0.9 \\
+    10 & 0.7 & 15 & 0.55 \\
+    20 & 0.4 & 25 & 0.1 \\
+    30 & 0 & 35 & 0 \\
+    40 & 0 & 45 & 0 \\
+    \hline
+  \end{tabular}
+  \caption{Dados coletados durante o experimento de caracterização da
+  antena no plano E.}
+  \label{tab:caracterizacaoantenaplanoe}
+\end{table}
+
 \subsubsection{Análise dos resultados}
+
+Os dados coletados foram plotados em gráficos, onde os eixos radiais
+representam o ângulo de rotação do goniômetro e os eixos circunferenciais
+representam a leitura do receptor, variando de 0 a 1.0 mA, que é o
+valor máximo lido pelo receptor. Os gráficos das figuras
+\ref{fig:img/planoh.png}
+e \ref{fig:img/planoe.png} abaixo mostram os padrões de radiação da
+antena nos planos H e E, respectivamente.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/planoe.png}
+  \caption{Padrão de radiação da antena no plano E.}
+  \label{fig:img/planoe.png}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/planoh.png}
+  \caption{Padrão de radiação da antena no plano H.}
+  \label{fig:img/planoh.png}
+\end{figure}
 
 \clearpage
 \section{Conclusão}
